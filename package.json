@@ -1,0 +1,28 @@
+{
+  "name": "sans",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "flow-bin": "^0.59.0",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-scripts": "1.0.17",
+    "react-styleguidist": "^6.0.33"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "flow": "flow",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.2.15",
+    "@storybook/addon-actions": "^3.2.15",
+    "@storybook/addon-links": "^3.2.15"
+  }
+}
