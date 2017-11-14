@@ -164,6 +164,8 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
+                  modules: true,
+                  localIdentName: "[name]_[local]__[hash:base64:5]" 
                 },
               },
               {
@@ -174,7 +176,6 @@ module.exports = {
                   ident: 'postcss',
                   plugins: () => [
                     require('postcss-flexbugs-fixes'),
-                    require('postcss-smart-import'),
                     require('precss'),
                     autoprefixer({
                       browsers: [
