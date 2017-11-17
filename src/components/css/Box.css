@@ -1,0 +1,44 @@
+@import "./DefaultTheme.css";
+
+
+// Ref: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+.box {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex: 0 1 auto;
+
+    background: $bg;
+}
+
+.reverse { flex-direction: row-reverse; }
+.vertical { flex-direction: column; }
+.verticalreverse { flex-direction: column-reverse; }
+.wrap { flex-wrap: wrap; }
+
+.x1-end { justify-content: flex-end; }
+.x1-center { justify-content: center; }
+.x1-between { justify-content: space-between; }
+.x1-around { justify-content: space-around; }
+.x1-evenly { justify-content: space-evenly; }
+
+.x2-start { align-items: flex-start; }
+.x2-end { align-items: flex-end; }
+.x2-stretch { align-items: stretch; }
+.x2-baseline { align-items: baseline; }
+
+.xw-start { align-content: flex-start; }
+.xw-end { align-content: flex-end; }
+.xw-stretch { align-content: stretch; }
+.xw-between { align-content: space-between; }
+.xw-around { align-content: space-around; }
+
+
+.test {
+    color: #00f;
+}

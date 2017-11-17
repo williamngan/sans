@@ -1,9 +1,0 @@
-@import "./DefaultTheme.css";
-
-.btn {
-    background: $bg;
-}
-
-.test {
-    color: #00f;
-}
