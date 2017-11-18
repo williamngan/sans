@@ -1,0 +1,17 @@
+
+
+/* Make inline-block child elements align vertically without flexbox, even when the height of parent and child are not known in advance. */
+.verticalAlign {
+    
+    &:before {
+        content: '';
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .centered {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

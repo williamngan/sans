@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Box} from "./components/Button";
+import {Box} from "./components/Box";
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Box>Hello</Box>
+        <Box vertical justify="around" align="center" height={100} pad={20}><div>Hello</div><div>World</div></Box>
       </div>
     );
   }

@@ -1,6 +1,36 @@
 export function isFalse(val) {
-  return val === false || val === null || val === undefined || val === NaN;
+  return val === false || val === null || val === undefined || isNaN( val );
 }
+
+
+export function cssNames( styles, ...args ) {
+  let c = [];
+  let names = ( Array.isArray(args[0]) ? args[0] : args );
+  for (let i=0, len=names.length; i<len; i++) {
+    if ( styles[ names[i] ] ) c.push( styles[ names[i] ] );
+  }
+  return c.join(' ');
+}
+
+
+export function resolveCssProps( props, keys ) {
+  let res = [];
+  for (let i=0, len=keys.length; i<len; i++) {
+    let k = keys[i];
+    let p = props[ k ];
+    res.push( (p === true) ? k : k+p );  
+  }
+  return res;
+}
+
+export function resolveStyleProps( props, keys ) {
+  let res = {};
+  for (let i=0, len=keys.length; i<len; i++) {
+    let k = keys[i];
+    if ( props[k] !== undefined ) res[k] = props[k];
+  }
+  return res;
+} 
 
 
 export function keyName(which) {
