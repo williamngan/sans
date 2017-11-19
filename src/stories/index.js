@@ -6,6 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 import { withInfo } from '@storybook/addon-info';
 
 import { Box } from '../components/Box';
+import { Btn } from '../components/Btn';
 
 
 storiesOf('Box', module)
@@ -50,3 +51,14 @@ storiesOf('Box', module)
   .add('(item props) flex=[5 1 30px, 3 1 30px, 1 1 30px]', () => <Box guide width={300} height={100}><Box guide flex="5 1 30px">Hello Avocado Banana</Box><Box guide flex="3 1 30px">Flex Bacon Butter!</Box><Box guide flex="1 1 30px">Box Kale Tofu!</Box></Box>)
   .add('(item props) order=[2,-1,1]', () => <Box guide width={300} height={100}><Box guide flex="1" order={2}>Hello Avocado Banana</Box><Box guide flex="1" order={-1}>Flex Bacon Butter!</Box><Box guide flex="1" order={1}>Box Kale Tofu!</Box></Box>)
   
+
+storiesOf('Btn', module)
+  .addDecorator((story, context) => withInfo('common info')(story)(context))
+
+  .add('default', () => <Btn>Hello</Btn>)
+  .add('default width=200', () => <Btn width={200}>Hello</Btn>)
+  .add('default size=xs', () => <Btn size="xs">Hello</Btn>)
+  .add('default size=s', () => <Btn size="s">Hello</Btn>)
+  .add('default size=l', () => <Btn size="l">Hello</Btn>)
+  .add('default color=success', () => <Btn color="success">Hello</Btn>)
+  .add('default color=highlight', () => <Btn color="highlight">Hello</Btn>)

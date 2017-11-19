@@ -1,4 +1,4 @@
-@import "./DefaultTheme.css";
+@import "./theme.css";
 
 
 /* 
@@ -17,10 +17,6 @@
     align-content: center;
     flex: 0 1 auto;
     
-    background: $background;
-    color: $color;
-    font-family: $fontFamily;
-
 }
 
 .guide { box-shadow: inset 0px 0px 0px 1px $guide; }
@@ -30,6 +26,7 @@
 .verticalreverse { flex-direction: column-reverse; }
 .wrap { flex-wrap: wrap; }
 
+.justifystart { justify-content: flex-start; }
 .justifyend { justify-content: flex-end; }
 .justifycenter { justify-content: center; }
 .justifybetween { justify-content: space-between; }
@@ -38,6 +35,7 @@
 
 .alignstart { align-items: flex-start; }
 .alignend { align-items: flex-end; }
+.aligncenter { align-items: center; }
 .alignstretch { align-items: stretch; }
 .alignbaseline { align-items: baseline; }
 

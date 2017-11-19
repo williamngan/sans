@@ -1,0 +1,23 @@
+$background: transparent;
+$color: #345;
+$fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+$guide: rgba(255,0,50,.5);
+
+/* font sizes */
+$fontSizeXS: 9px;
+$fontSizeS: 11px;
+$fontSizeM: 14px;
+$fontSizeL: 20px;
+$fontSizeXL: 32px;
+
+/* semantic colors */
+$success: #0c9;
+$error: #f03;
+$info: #60f;
+$highlight: #fe6;
+$primary: #09f;
+$secondary: #9ab;
+$light: #f3f5fa;
+$dark: #345;
+$darkBlend: rgba(0,0,0,.4);
+$lightBlend: rgba(255,255,255,.6);

@@ -1,0 +1,29 @@
+@import "./theme.css";
+
+.btn {
+    color: #fff;
+    background: $dark;
+    padding: 0 20px; height: 40px;
+
+    font-family: $fontFamily;
+    font-size: $fontSizeM;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.colorsuccess { background: $success; }
+.colorerror { background: $error; }
+.colorinfo { background: $info; }
+.colorhighlight { background: $highlight; color: $darkBlend; }
+.colorprimary { background: $primary; }
+.colorsecondary { background: $secondary; }
+.colorlight { background: $light; color: $dark; }
+.colordark { background: $dark; }
+.colordarkBlend { background: $darkBlend; }
+.colorlightBlend { background: $lightBlend; color: $dark; }
+
+.sizexs { padding: 5px; height: auto; font-size: $fontSizeXS; }
+.sizes { padding: 0 10px; height: 30px; font-size: $fontSizeS; }
+.sizem { padding: 0 20px; height: 40px; }
+.sizel { padding: 0 20px; height: 60px; font-size: $fontSizeL; }
+.sizexl { padding: 0 30px; height: 80px; font-size: $fontSizeL; }
