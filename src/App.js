@@ -14,7 +14,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <Box vertical justify="around" align="center" height={100} pad={20}><div>Hello</div><div>World</div></Box>
+        <Box vertical justify="around" align="center" height={100} pad="5px 50px"><div>Hello</div><div>World</div></Box>
       </div>
     );
   }

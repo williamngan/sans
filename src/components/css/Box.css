@@ -8,6 +8,7 @@
 .box {
     display: flex;
     box-sizing: border-box;
+    overflow: hidden;
     
     flex-direction: row;
     flex-wrap: nowrap;
@@ -16,11 +17,14 @@
     align-content: center;
     flex: 0 1 auto;
     
-    background: $bg;
+    background: $background;
+    color: $color;
+    font-family: $fontFamily;
 
 }
 
-
+.guide { box-shadow: inset 0px 0px 0px 1px $guide; }
+.inline { display: inline-block; }
 .reverse { flex-direction: row-reverse; }
 .vertical { flex-direction: column; }
 .verticalreverse { flex-direction: column-reverse; }

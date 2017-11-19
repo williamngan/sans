@@ -14,30 +14,34 @@ type Props = {
   justify?: string,
   align?: string,
   content?: string, // align-contents
+  overflow?: string,
   
   // item props
+  inline?: boolean;
   order?: number,
   alignSelf?: string,
   flex?: string, // [flex-grow, flex-shrink, basis]
 
   // style props
-  pad?: string|number
+  pad?: string|number,
+  bg?:string
 };
 
 export class Box extends React.Component<Props> {
 
   _classProps( props:Props, styles:{[key: string]: any} ) {
-    let cls = resolveCssProps( props, ["vertical", "reverse", "verticalreverse", "wrap", "justify", "align", "content"] );
+    let cls = resolveCssProps( props, ["inline", "vertical", "reverse", "verticalreverse", "guide", "wrap", "justify", "align", "content"] );
     cls.unshift("box");
     if (typeof props.pad === "number") cls.push( "pad"+props.pad );
     return cssNames( styles, cls );
   }
 
   _styleProps( props:Props ) {
-    let res = resolveStyleProps( props, ["width", "height", "order", "alignSelf", "flex"] );
-    if (typeof props.pad === "number") {
-      res["padding"] = props["pad"];
-    }
+    let res = resolveStyleProps( props, ["width", "height", "overflow", "order", "alignSelf", "flex"] );
+
+    if (props.pad) res["padding"] = props.pad;
+    if (props.bg) res["background"] = props.bg;
+
     return res;
   }
 
